@@ -24,7 +24,7 @@ jobs:
 
       - name: Run JMeter Test
         run: |
-          apache-jmeter-5.6.3/bin/jmeter -n -t JMeter-Performance-Testing- Test -Plan.jmx -l results.jtl -e -o results
+          apache-jmeter-5.6.3/bin/jmeter -n -t JMeter_Performance_Testing_Test_Plan.jmx -l results.jtl -e -o results
 
       - name: Upload JMeter HTML Report
         uses: actions/upload-artifact@v4
